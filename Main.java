@@ -17,8 +17,8 @@ public class Main {
         Student student1 = new Student("S101", "Alice Johnson", "alice@example.com");
         Student student2 = new Student("S102", "Bob Smith", "bob@example.com");
 
-        CourseOffering offering1 = new CourseOffering("OFF001", "Java Fundamentals - June 2026 Intake", course1, instructor1, "2026-06-19", "2026-06-20", 30, "Online");
-        CourseOffering offering2 = new CourseOffering("OFF002", "Data Structures - September 2027 Intake", course2, instructor2, "2027-09-01", "2027-12-01", 25, "Physical");
+        CourseOffering offering1 = new CourseOffering("OFF001", "Java Fundamentals - June 2026 Intake", course1, instructor1, "2026-06-19", "2026-06-20", 25, "Online");
+        CourseOffering offering2 = new CourseOffering("OFF002", "Data Structures - September 2027 Intake", course2, instructor2, "2027-09-01", "2027-12-01", 30, "Physical");
 
         course1.setInstructor(instructor1);
         course2.setInstructor(instructor2);

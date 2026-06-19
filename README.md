@@ -42,3 +42,17 @@ ANS:
 2. Updated the constructor — Both category and active are now parameters, so every Course object must be given these values when created.
 3. Added two new getters — getCategory() returns the category and isActive() returns the active status. Boolean getters use is instead of get by Java convention.
 4. Updated printSummary() — Instead of printing true or false, it now prints "Active" or "Inactive" using a ternary operator: (active ? "Active" : "Inactive").
+
+## Day 1 Exercise 03 - Add a CourseOffering Class
+Why is CourseOffering more useful than using only Course when building a real web application?
+ANS: A Course is just a template — it holds the general info like title, 
+category, and duration. But in a real web application, the same course can 
+run multiple times with different instructors, dates, and capacity limits. 
+CourseOffering represents one specific scheduled run of that course. 
+For example, "Java Fundamentals" can have a June 2026 intake and a 
+September 2026 intake as two separate offerings. This makes it easier 
+to manage enrolments, track batches, and support different delivery modes 
+like Online or Physical — without duplicating the course data each time.
+
+I use AI to :
+ANS: help me with tthe oject instances, help me to fill the details of the requirements but i understand the tasks clearly

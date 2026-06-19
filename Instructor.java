@@ -5,6 +5,12 @@ public class Instructor {
     private String instructorName;
     private String expertise;
 
+    public Instructor(String instructorId, String instructorName, String expertise) {
+        this.instructorId = instructorId;
+        this.instructorName = instructorName;
+        this.expertise = expertise;
+    }
+
     public String getInstructorId() {
         return instructorId;
     }  

@@ -7,15 +7,21 @@ public class Course {
     private String level;
     private int creditHours;
 
+    //Exercise 2
+    private String category;  //new variable for course category
+    private boolean active;  //new variable to indicate if the course is active or not
+
     private Instructor instructor;  //calling other class
 
     //constructor - special method to create object of a class
-    public Course(String courseId, String title, int durationHours, String level, int creditHours) {
+    public Course(String courseId, String title, int durationHours, String level, int creditHours, String category, boolean active) {
         this.courseId = courseId;
         this.title = title;
         this.durationHours = durationHours;
         this.level = level;
         this.creditHours = creditHours;
+        this.category = category;
+        this.active = active;
     }
 
     //getter and setter - to access private variables
@@ -25,6 +31,14 @@ public class Course {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public boolean isActive() {
+        return active;
     }
 
     public int getCreditHours() {
@@ -69,6 +83,8 @@ public class Course {
         System.out.println("Duration: " + durationHours + " hours");
         System.out.println("Level: " + level);
         System.out.println("Credit Hours: " + creditHours);
+        System.out.println("Category: " + category);
+        System.out.println("Status: " + (active ? "Active" : "Inactive"));
 
         if (instructor != null) {
             System.out.println("Instructor: " + instructor.getInstructorName());

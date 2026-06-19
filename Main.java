@@ -11,8 +11,8 @@ public class Main {
         Instructor instructor2 = new Instructor("I102", "Jane Smith", "Data Structures");
 
         //create course
-        Course course1 = new Course("C101", "Java Programming", 40, "Beginner", 3);
-        Course course2 = new Course("C102", "Data Structures", 50, "Intermediate", 4);
+        Course course1 = new Course("C101", "Java Programming", 40, "Beginner", 3, "Programming", true);
+        Course course2 = new Course("C102", "Data Structures", 50, "Intermediate", 4, "Computer Science", false);
         course1.printSummary();
         course2.printSummary();
 

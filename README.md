@@ -30,3 +30,15 @@ ANS: In Python you can just do course.title directly. In Java, private blocks th
 
 One part you still needed the trainer or your own reading to understand.
 ANS: why not all setter function didnt need to defined in the code ?
+
+
+## Day 1 Exercise 02 - Improve the Course Class
+Screenshot of updated course output.
+![Program Output](images/outputEx2.png)
+
+Brief explanation of what changed in Course.java.
+ANS:
+1. Added two new fields — category (String) to group the course type e.g. Programming, Frontend, Database, and active (boolean) to indicate whether the course is currently running.
+2. Updated the constructor — Both category and active are now parameters, so every Course object must be given these values when created.
+3. Added two new getters — getCategory() returns the category and isActive() returns the active status. Boolean getters use is instead of get by Java convention.
+4. Updated printSummary() — Instead of printing true or false, it now prints "Active" or "Inactive" using a ternary operator: (active ? "Active" : "Inactive").
